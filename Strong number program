@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+void main()
+{
+  int num,r,sum=0,f=1,temp;
+  scanf("%d",&num);
+  temp=num;
+  while(num>0)
+  {
+    r=num%10;
+    while(r>0)
+    {
+      f*=r;
+      r--;
+    }
+    sum+=f;
+    num/=10;
+    f=1;
+  }
+  if(temp==sum)
+  printf("%d is strong number",temp);
+  else
+  printf("%d is not a strong number",temp);
+}
+
+
+
+
+
+
