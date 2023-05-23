@@ -1,0 +1,22 @@
+
+#include<stdio.h>
+
+void main()
+{
+  int i;
+  float age;
+  while(i<20)
+  {
+    scanf("%f",&age);
+    if(age<6){
+    printf("baby age");
+    }
+    else if(age>6 && age<18){
+    printf("school age");
+    }
+    else{
+    printf("adult age");
+    }
+    i++;
+  }
+}
